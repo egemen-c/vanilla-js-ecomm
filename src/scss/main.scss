@@ -1,0 +1,18 @@
+/* helpers*/
+
+@import './helpers/reset.scss';
+
+
+/* global */
+
+@import './global/mixin.scss';
+@import './global/variables.scss';
+
+/* Components */
+@import './components/navigation.scss';
+
+body {
+    font-family:$baseFont;
+    font-size: 1.5rem;
+    background-color: $soap;
+}
