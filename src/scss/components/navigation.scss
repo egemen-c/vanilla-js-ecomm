@@ -1,37 +1,41 @@
+.nav-section {
+    height: 40vh;
+}
+
 .nav-wrapper {
     width: 100%;
     height: 30vh;
-        .nav-brand {
-            text-align: center;
-            font-size: 5rem;
-            padding: 1rem;
-            color: $black;
-        }
-        
-        .nav-main {
-            width: 100%;
-            height: 10vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            background-color: $darkSoap;
+    
+    .nav-brand {
+        text-align: center;
+        font-size: 5rem;
+        padding: 1rem;
+        color: $black;
+    }
 
-            .nav-items-wrapper {                
-                    ul {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap:10px;
+    .nav-main {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $darkSoap;
 
-                        li {
-                                a {
-                                    color: $black;
-                                    text-decoration-color:$pink;
+        .nav-items-wrapper {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
 
-                                }
-
-                        }
+                li {
+                    a {
+                        color: $black;
+                        text-decoration-color: $pink;
                     }
+
+                }
             }
         }
+    }
 }
