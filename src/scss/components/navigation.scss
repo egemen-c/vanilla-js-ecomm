@@ -1,26 +1,31 @@
 .nav-section {
-    height: 40vh;
+    margin-bottom: 50px;
 }
 
 .nav-wrapper {
-    width: 100%;
-    height: 30vh;
-    
     .nav-brand {
         text-align: center;
-        font-size: 5rem;
+        font-size: 3rem;
         padding: 1rem;
-        color: $black;
+        color: $text-color;
     }
 
     .nav-main {
         width: 100%;
-        height: 10vh;
+        height: 6vh;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: $darkSoap;
-
+        background-color: $blue;
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            img {
+                width: 85%;
+                height: 85%;
+            }
+        }
+        
         .nav-items-wrapper {
             ul {
                 display: flex;
@@ -30,8 +35,8 @@
 
                 li {
                     a {
-                        color: $black;
-                        text-decoration-color: $pink;
+                        color: $text-color;
+                        text-decoration-color: $neon;
                     }
 
                 }

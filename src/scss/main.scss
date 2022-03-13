@@ -11,9 +11,18 @@
 /* Components */
 @import './components/navigation.scss';
 @import './components/slider.scss';
+@import './components/showcase.scss';
 
 body {
     font-family:$baseFont;
+    color: $text-color;
     font-size: 1.5rem;
-    background-color: $soap;
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+.section-margin {
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
