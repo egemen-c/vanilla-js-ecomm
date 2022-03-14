@@ -6,6 +6,7 @@
 /* global */
 
 @import './global/mixin.scss';
+@import './global/responsivemixin.scss';
 @import './global/variables.scss';
 
 /* Components */
@@ -13,6 +14,7 @@
 @import './components/slider.scss';
 @import './components/showcase.scss';
 @import './components/offer.scss';
+@import './components/products.scss';
 
 body {
     font-family:$baseFont;

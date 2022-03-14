@@ -4,7 +4,7 @@
   "description": "e-commerce website vanilla JavaScript",
   "main": "index.js",
   "scripts": {
-    "dev":"parcel ./src/index.html",
+    "dev":"parcel ./src/index.html -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "@egemen-c",
