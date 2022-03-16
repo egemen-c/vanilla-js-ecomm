@@ -1,5 +1,8 @@
-let categories = fetch('https://fakestoreapi.com/products/categories')
-    .then(res => res.json())
+class Category {
+    constructor(name) {
+        this.name = name;
+    }
+}
 
 class Product {
     constructor(id, name, price, image, description, category) {
@@ -14,9 +17,11 @@ class Product {
 }
 
 class Products {
+    categories = []
     constructor() {
-        this.allProducts = []
         this.fetchAllProducts()
+        this.fetchCategories()
+
     }
     fetchAllProducts() {
         fetch('https://fakestoreapi.com/products')
@@ -28,7 +33,6 @@ class Products {
 
 
     renderProducts(product) {
-        console.log(product)
         let productDiv = document.createElement('div')
         productDiv.className = 'product'
         productDiv.innerHTML = `
@@ -39,9 +43,26 @@ class Products {
                     <span class="tek-satir">${product.name}</span>
                     <span class="iki-satir">${product.description}</span>
                     <span>${product.price}$</span>
+                    <span><button class="add-btn">Add Cart</button></span>
                 </div>
            `
         document.querySelector('.products-wrapper').appendChild(productDiv)
+    }
+    fetchCategories() {
+        fetch('https://fakestoreapi.com/products/categories')
+            .then(res => res.json())
+            .then(json => json.forEach(el => {
+                this.renderCategories(new Category(el))
+            }))
+    }
+    renderCategories(category) {
+        let categoryBtn = document.createElement('button')
+        categoryBtn.className = 'category-btn'
+        categoryBtn.dataset.id = category.name
+        categoryBtn.innerHTML = `
+            ${category.name}
+           `
+        document.querySelector('.categories-wrapper').appendChild(categoryBtn)
     }
 }
 
@@ -50,20 +71,3 @@ function init() {
 
 }
 window.onload = init()
-
-
-/* const arr = []
-
-function fetchall() {
-
-} */
-
-/* function ad() {
-    arr.forEach(element => {
-        console.log(element);
-    })
-}
-
-console.log(typeof arr);
-console.log(arr);
-window.onload = fetchall()  */

@@ -4,3 +4,19 @@
     -webkit-line-clamp: $lineNumber;
     -webkit-box-orient: vertical;
 }
+
+@mixin button($fontSize, $radius, $padding) {
+    cursor: pointer;
+    border: 0px;
+    font-size: $fontSize;
+    border-radius: $radius;
+    padding: $padding;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        transition: .3s linear;
+        background-color: $cold;
+        color: $text-color;
+    }
+}
