@@ -65,3 +65,20 @@ prev.addEventListener('click', () => {
     slider.currentSlide--
     slider.changeSlide()
 })
+
+/* 
+
+let productDiv = document.createElement('div')
+productDiv.className = 'product'
+productDiv.innerHTML = `
+        <div class="product-head">
+            <img src="${product.image}" alt="">
+        </div>
+        <div class="product-body">
+            <span class="tek-satir">${product.name}</span>
+            <span class="iki-satir">${product.description}</span>
+            <span>${product.price}$</span>
+            <span><button class="add-btn">Add Cart</button></span>
+        </div>
+   `
+document.querySelector('.products-wrapper').appendChild(productDiv) */
