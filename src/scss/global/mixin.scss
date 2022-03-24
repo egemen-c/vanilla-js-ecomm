@@ -11,9 +11,8 @@
     font-size: $fontSize;
     border-radius: $radius;
     padding: $padding;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+
     &:hover {
         transition: .3s linear;
         background-color: $primary;

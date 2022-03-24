@@ -15,6 +15,7 @@
 @import './components/showcase.scss';
 @import './components/offer.scss';
 @import './components/products.scss';
+@import './components/contact.scss';
 
 body {
     font-family:$baseFont;
@@ -23,7 +24,7 @@ body {
 
 .section-margin {
     margin-top:50px;
-    margin-bottom:50px;
+    margin-bottom:100px;
     margin-left: 100px;
     margin-right: 100px;
 }
